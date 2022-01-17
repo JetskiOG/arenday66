@@ -10,7 +10,6 @@ $(document).ready(function(){
       $('.header').removeClass('affix');
     }
     });
-	
 	});
 $(document).ready(function(){
 	$('.slider').slick({
@@ -23,4 +22,5 @@ $(document).ready(function(){
 		
 	});
 });
+
 
