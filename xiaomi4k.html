@@ -160,10 +160,31 @@
               <div class="popup_title">
                 Форма обратного звонка
               </div>
-              <div class="popup_text">
-                quam labore odit alias adipisci libero eos quas reiciendis corrupti doloremque, totam rerum dolor, perferendis tenetur exercitationem quae nesciunt necessitatibus aliquam.
-                quam labore odit alias adipisci libero eos quas reiciendis corrupti doloremque, totam rerum dolor, perferendis tenetur exercitationem quae nesciunt necessitatibus aliquam.
-              </div>
+              <form action ="#" id="form" class="form__body">
+                    <div class="form__item">
+                      <label for="formName" class="form__label">Имя</label>
+                      <input id="formName" type="text" name="name" class="form__input _req">
+                    </div>
+                     <div class="form__item">
+                      <label for="formEmail" class="form__label">E-mail</label>
+                      <input id="formEmail" type="text" name="email" class="form__input _req _email" placeholder="example@email.com">
+                    </div>
+                    <div class="form__item">
+                      <label for="formNumber" class="form__label">Номер телефона</label>
+                      <input id="formNumber" type="tel" name="phonenumber" class="form__input _req" placeholder="+79000000000">
+                    </div>
+                    <div class="form__item">
+                      <label for="formMessage" class="form__label">Сообщение</label>
+                      <textarea name="message" id="formMessage" class="form__input" placeholder="Напишите, какое оборудование хотите взять в аренду"></textarea>
+                    </div>
+                    <div class="form__item">
+                      <div class="checkbox1">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                        <label for="formAgreement" class="checkbox__label"><span>Я даю своё согласие на обработку персональных данных в соответствиями с <a href="">условиями</a></span>
+                      </div>
+                    </div>
+                    <button type ="submit" class="form__button"><span>ОТПРАВИТЬ</span></button>
+                  </form>
             </div>
           </div>
         </div>
@@ -198,5 +219,6 @@
     <script src="https://use.fontawesome.com/0ec4a33e05.js"></script><!--FontAwesome-->
     <script src="js/script1.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/formscript.js"></script>
 </body>
 </html>
