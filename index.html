@@ -22,9 +22,9 @@
           </div>
           <nav class="header_menu">
             <ul class="header_list">
-              <li><a href="" class="header_link">О нас</a></li>
-              <li><a href="" class="header_link">Доставка</a></li>
-              <li><a href="" class="header_link">Отзывы</a></li>
+              <li><a href="#about" class="header_link">О нас</a></li>
+              <li><a href="#delivery" class="header_link">Доставка</a></li>
+              <li><a href="otzivi.html" class="header_link">Отзывы</a></li>
               <li><a href="#popup1" class='header_button'>ОСТАВИТЬ ЗАЯВКУ</a></li>
             </ul>
           </nav>
@@ -41,6 +41,7 @@
     </div>
     <section class='main_content1'>
       <div class="container">
+        <div id="about"></div>
         <div class="about_container">
           <div class="about_us">
             <h3 class=about_us_title>Компания "Название"</h3>
@@ -72,7 +73,6 @@
           <li><button class="tablinks1" onclick="openCity1(event, 'team1')" id="defaultopen1">Телевизоры</button></li>
           <li><button class="tablinks1" onclick="openCity1(event, 'team2')">Колонки</button></li>
           <li><button class="tablinks1" onclick="openCity1(event, 'team3')">Микрофоны</button></li>
-
         </ul>
         </div>
         <div id="team1" class="tabcontent1">
@@ -165,7 +165,7 @@
           </div>
         </div>
       </div>
-     </div>
+    </div>
       <script>
         function openCity1(evt, cityName1) {
     // Declare all variables
@@ -189,19 +189,20 @@
 }
      document.getElementById("defaultopen1").click();
       </script>
-    </div>
+      <div id="delivery"></div>
     <div class="contact_map">
-      <h3>КОНТАКТЫ</h3>
+      <h3>ДОСТАВКА</h3>
       <div class="container">
         <div class="contact2">
-          <h2>Ждем вас в нашем салоне</h2>
+          <h2>Доставляем быстро</h2>
           <div class="phone2">
-            <span>+7 (900) 000-00-00</span>
-            <span>example@gmail.com</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta ipsa, nostrum omnis magnam! </span>
           </div>
           <div class="adress">
-            <span>Адрес:</span>
-            <p>Г. Екатеринбург, Проспект Ленина, д.10, офис 3</p>
+            <span>Условия доставки</span>
+            <p>В пределах Екатеринбурга доставка осуществляется бесплатно</p>
+            <p>С выездом за границу Екатеринбурга в пределах <span id="km10">10 км</span> доставка стоит 500р</p>
+            <p>С выездом за границу Екатеринбурга в пределах <span id="km20">20 км</span> доставка стоит 1000р</p>
           </div>
         </div>
         <div class="map">
