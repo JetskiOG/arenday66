@@ -356,6 +356,7 @@ input,textarea{
 	height:92vh;
 	padding-top:100px;
 	background-size: cover;
+	margin-bottom: -100px;
 }
 .content_text{
 	padding-top: 225px;
@@ -803,8 +804,8 @@ flex-wrap: wrap;
 .our_team{
 	width: 100%;
 	height: auto;
-	margin-bottom: 60px;
-	margin-top: 60px;
+	margin-top: 80px;
+	margin-bottom: -100px;
 }
 .soput_products{
 	width: 100%;
@@ -905,6 +906,12 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 	margin-top: -20px;
 }
 /*Контакты и карта*/
+#about{
+	padding-bottom: 100px;	
+}
+#delivery{
+	padding-bottom: 100px;
+}
 .contact_map{
 	width: 100%;
 	height: auto;
@@ -934,7 +941,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 .contact2{
 	width: 45%;
-	height: 300px;
+	height: 350px;
 	flex-direction: column;
 	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
 -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
@@ -946,20 +953,28 @@ padding-top: 30px;
 	font-size: 24px;
 	font-weight: 400;
 	color:#9900CC;
+	text-transform: none;
 }
 .phone2{
 	display: flex;
 	flex-direction: column;
-	margin: 30px 0px 50px 0px;
-	font-size: 20px;
+	margin: 0px 0px 20px 0px;
+	font-size: 1.2em;
 }
 .adress>span{
 	font-size: 24px;
 	color:#9900CC;
 }
+#km10{
+	color: #FF9900;
+}
+#km20{
+	color: #FF0000;
+}
 .adress>p{
-	font-size: 20px;
+	font-size: 1.2em;
 	margin-top: 10px;
+	margin-bottom: 15px;
 }
 .phone2>span{
 	margin-top: 10px;
@@ -1384,6 +1399,49 @@ textarea{
 	font-family: Montserrat, sans-serif;
 
 }
+/*Страница с отзывами*/
+.review{
+width: 60%;
+min-height: 75vh;
+margin: 0 auto;
+margin-top: 20px;
+background-color: #FAFAFA;
+border-radius: 25px;
+box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 50%);
+padding: 20px;
+}
+
+#review_container{
+	padding-top: 10px;
+
+}
+#review_container>h1{
+	text-align: center;
+	margin-top: 50px;
+}
+.review_body{
+	height: auto;
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 30%);
+}
+.review_name{
+font-size: 1.4em;
+margin-bottom: 10px;
+color: #9900CC ;
+}
+.review_text{
+font-size: 1.2em;
+}
+@media(max-width: 767px){
+	.review{
+		width: 80%
+	}
+}
+/**/
+
+
 /*ФУТЕР*/
 footer{
 	width: 100%;
