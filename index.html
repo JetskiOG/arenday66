@@ -280,8 +280,100 @@
                       <input id="formNumber" type="tel" name="phonenumber" class="form__input _req" placeholder="+79000000000">
                     </div>
                     <div class="form__item">
-                      <label for="formMessage" class="form__label">Сообщение</label>
-                      <textarea name="message" id="formMessage" class="form__input" placeholder="Напишите, какое оборудование хотите взять в аренду"></textarea>
+                      <span>ВЫБЕРИТЕ АРЕНДУЕМОЕ ОБОРУДОВАНИЕ</span>
+                    </div>
+                    <div class="form__item">
+                      <ul class="menu_list">
+                        <li>
+                          <div class="menu_link" id="ml1">Телевизоры</div>
+                          <ul class="sub-menu_list" id="sml1">
+                            <li>
+                            <div class="list_block">
+                                <span class="list_block_item">Lorem ipsum </span>
+                                <div class="block_buttons">
+                                <button class="list_block_button" type="button" onclick="minus(1)">-</button>
+                                <span class="quality" id="col_1">0</span>
+                                <button class="list_block_button"type="button" onclick="plus(1)">+</button>
+                              </div>
+                                <span class="list_block_price"><span id="cena_1">10000</span> р.</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="list_block">
+                              <span class="list_block_item">Lorem ipsum </span>
+                              <div class="block_buttons">
+                              <button class="list_block_button" type="button" onclick="minus(2)">-</button>
+                              <span class="quality" id="col_2">0</span>
+                              <button class="list_block_button"type="button" onclick="plus(2)">+</button>
+                            </div>
+                              <span class="list_block_price"><span id="cena_2">10000</span> р.</span>
+                          </div>
+                          </li>
+                          <li>
+                            <div class="list_block">
+                              <span class="list_block_item">Lorem ipsum </span>
+                              <div class="block_buttons">
+                              <button class="list_block_button" type="button" onclick="minus(3)">-</button>
+                              <span class="quality" id="col_3">0</span>
+                              <button class="list_block_button"type="button" onclick="plus(3)">+</button>
+                            </div>
+                              <span class="list_block_price"><span id="cena_3">10000</span> р.</span>
+                          </div>
+                          </li>
+                        </ul>
+                      </ul>
+                      <ul class="menu_list">
+                        <li>
+                        <div class="menu_link" id="ml2">Телевизоры</div>
+                        <ul class="sub-menu_list" id="sml2">
+                          <li>
+                            <div class="list_block">
+                              <span class="list_block_item">Lorem ipsum </span>
+                              <div class="block_buttons">
+                              <button class="list_block_button" type="button" onclick="minus(4)">-</button>
+                              <span class="quality" id="col_4">0</span>
+                              <button class="list_block_button"type="button" onclick="plus(4)">+</button>
+                            </div>
+                              <span class="list_block_price"><span id="cena_4">10000</span> р.</span>
+                          </div>
+                          </li>
+                          <li>
+                            <div class="list_block">
+                              <span class="list_block_item">Lorem ipsum </span>
+                              <div class="block_buttons">
+                              <button class="list_block_button" type="button" onclick="minus(5)">-</button>
+                              <span class="quality" id="col_5">0</span>
+                              <button class="list_block_button"type="button" onclick="plus(5)">+</button>
+                            </div>
+                              <span class="list_block_price"><span id="cena_5">10000</span> р.</span>
+                          </div>
+                          </li>
+                        </ul>
+                        </li>
+                      </ul>
+                      <ul class="menu_list">
+                        <li>
+                        <div class="menu_link" id="ml3">Телевизоры</div>
+                        <ul class="sub-menu_list" id="sml3">
+                          <li>7</li>
+                          <li>8</li>
+                          <li>9</li>
+                        </ul>
+                      </li>
+                      </ul>
+                      <ul class="menu_list">
+                        <li>
+                        <div class="menu_link" id="ml4">Телевизоры</div>
+                        <ul class="sub-menu_list" id="sml4">
+                          <li>10</li>
+                          <li>11</li>
+                          <li>12</li>
+                        </ul>
+                      </li>
+                      </ul>
+                    </div>
+                    <div class="form__item">
+                      <span>ИТОГО: <span id="itog"> 0</span> руб.</span>
                     </div>
                     <div class="form__item">
                       <div class="checkbox1">
@@ -295,7 +387,38 @@
             </div>
           </div>
         </div>
-
+        <script>
+          let menuElem = document.getElementById('ml1');
+          let titleElem = document.getElementById('sml1');
+      
+          menuElem.onclick = function() {
+            titleElem.classList.toggle('open');
+          };
+        </script>
+         <script>
+          let menuElem1 = document.getElementById('ml2');
+          let titleElem1 = document.getElementById('sml2');
+      
+          menuElem1.onclick = function() {
+            titleElem1.classList.toggle('open');
+          };
+        </script>
+         <script>
+          let menuElem2 = document.getElementById('ml3');
+          let titleElem2 = document.getElementById('sml3');
+      
+          menuElem2.onclick = function() {
+            titleElem2.classList.toggle('open');
+          };
+        </script>
+         <script>
+          let menuElem3 = document.getElementById('ml4');
+          let titleElem3 = document.getElementById('sml4');
+      
+          menuElem3.onclick = function() {
+            titleElem3.classList.toggle('open');
+          };
+        </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
